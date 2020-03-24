@@ -21,5 +21,6 @@ namespace GeneralStore.MVC.Models
         [Required]
         [Display(Name = "It is food")]
         public bool IsFood { get; set; }
+        public virtual ICollection<Transaction> Transactions { get; set; }
     }
 }

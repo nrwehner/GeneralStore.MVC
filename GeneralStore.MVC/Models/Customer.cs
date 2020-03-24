@@ -23,5 +23,6 @@ namespace GeneralStore.MVC.Models
                 return $"{FirstName} {LastName}";
             }
         }
+        public virtual ICollection<Transaction> Transactions { get; set; }
     }
 }
